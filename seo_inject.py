@@ -44,11 +44,11 @@ for i in os.listdir(path):
             key_tag = "<meta name='keywords' content=" + "'" + name_of_page + " in " + town1 + ", " + town2 + " " + name_of_page + ", " + name_of_page + " in " + town2 + ", " + town1 + " " + name_of_page + ", " + zip1 + " " + name_of_page + ", " + name_of_page + " " + zip1 +  "'>"
         desc_generator = randint(0, len(get_number) - 1)
         if desc_generator == 1:
-            desc_tag = "<meta name='description' content=" + "'" + 'If you need a dentist appointment in ' + town2 + ', then call ' + name + ' today at ' + phone + ".'>"
+            desc_tag = "<meta name='description' content=" + "'" + 'If you need a ' + occupation + ' appointment in ' + town2 + ', then call ' + name + ' today at ' + phone + ".'>"
         elif desc_generator == 2:
-            desc_tag = "<meta name='description' content="  + "'" +'For the best dentist in ' + town1 + ',call ' + phone + ' today for an appointment with ' + name + ".'>"
+            desc_tag = "<meta name='description' content="  + "'" +'For the best' + occupation + ' in ' + town1 + ',call ' + phone + ' today for an appointment with ' + name + ".'>"
         else:
-            desc_tag = "<meta name='description' content="  + "'" + 'Call ' + name + ' today at ' + phone + ' for an appointment with the best dentist in ' + town2 + ".'>"
+            desc_tag = "<meta name='description' content="  + "'" + 'Call ' + name + ' today at ' + phone + ' for an appointment with the best ' + occupation + ' in ' + town2 + ".'>"
         all_titles.append(title_tag)
         all_files.append(i)
         all_keywords.append(key_tag)
